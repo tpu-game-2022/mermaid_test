@@ -17,9 +17,39 @@ Mermaidを触ってみよう
 - カッコいいほど高得点
 
 ## 解答
+### RPGの戦闘
+- プレイヤーとエネミーがいる
+- プレイヤーは剣での攻撃と魔法攻撃、逃走が出来る
+- エネミーは攻撃してくるだけ
 ```mermaid
 flowchart LR;
-  A --> B
+  Start([開始]) --> PlayerTurn[/入力/]
+  PlayerTurn --> PlayerInput{選択}
+  
+  PlayerInput -- たたかう --> Attack[攻撃]
+  Attack --> EnemyHPDown[敵のHPを減らす]
+  EnemyHPDown --> CheckEnemyHP{HPの確認}
+  CheckEnemyHP -- 0 --> End([終了])
+  CheckEnemyHP -- 0以外 -->EnemyTurn
+  
+  PlayerInput -- まほう--> MagicChoice[/選択/]
+  MagicChoice --> CheckMP{MP確認}
+  CheckMP -- ある --> Magic[魔法発射]
+  Magic --> CheckEnemyHP
+  CheckMP -- ない --> PlayerInput
+
+  PlayerInput -- にげる --> Check{逃げられるか}
+  Check -- 成功 --> End
+  Check -- 失敗 --> EnemyTurn[敵のターン]
+  
+  EnemyTurn --> EnemyAttack[攻撃]
+  EnemyAttack --> PlayerHPDown[プレイヤーのHPを減らす]
+  PlayerHPDown --> CheckPlayerHP{HPの確認}
+  CheckPlayerHP -- 0 --> End
+  CheckPlayerHP -- 0以外 --> PlayerTurn
+  
+  
+  
 ```
 
 ## シーケンス図
