@@ -18,8 +18,8 @@ Mermaidを触ってみよう
 
 ## 解答
 ```mermaid
-flowchart LR;
-  ([START])--> A
+flowchart TD;
+  ([START]) --> A
   A --> B
   A --> C
   B --> ([END])
