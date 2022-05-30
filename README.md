@@ -19,11 +19,11 @@ Mermaidを触ってみよう
 ## 解答
 ```mermaid
 flowchart TD;
-  START --> A
+  START([開始]) --> A
   A --> B
   A --> C
-  B --> END
-  C --> END
+  B --> END([終了])
+  C --> END([終了])
 ```
 
 ## シーケンス図
