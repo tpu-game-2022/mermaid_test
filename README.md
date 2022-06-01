@@ -19,7 +19,7 @@ Mermaidを触ってみよう
 ## 解答
 ```mermaid
 flowchart LR;
-  A["開始"] --> B
+  A["開始"] --> B["終了"]
 ```
 
 ## シーケンス図
