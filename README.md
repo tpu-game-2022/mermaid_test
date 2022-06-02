@@ -88,7 +88,7 @@ Kougeidai o-- AtsugiCampus
 Kougeidai o-- NakanoCampus
 AtsugiCampus *-- KouGakubu
 KouGakubu:size()
-KouGakubu:int Machine
+KouGakubu:Machine
 KouGakubu:int Electronics
 KouGakubu:int IT
 KouGakubu:int Chemistry
