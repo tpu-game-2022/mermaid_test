@@ -82,3 +82,22 @@ Program-->>Kikaku:Douzo.
 - カッコいいほど高得点
 
 ## 解答
+```mermaid
+classDiagram
+Kougeidai o-- AtsugiCampus
+Kougeidai o-- NakanoCampus
+AtsugiCampus *-- KouGakubu
+Kougakubu:Machine
+Kougakubu:Electronics
+Kougakubu:IT
+Kougakubu:Chemistry
+Kougakubu:Artchitecture
+NakanoCampus *-- GeizyutsuGakubu
+GeizyutsuGakubu:Picture
+GeizyutsuGakubu:Movie
+GeizyutsuGakubu:Design
+GeizyutsuGakubu:IM
+GeizyutsuGakubu:Animation
+GeizyutsuGakubu:Game
+GeizyutsuGakubu:Comic
+```
