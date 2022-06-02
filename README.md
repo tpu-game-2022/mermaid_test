@@ -45,6 +45,8 @@ sequenceDiagram
  participant ユーザー
  participant 予約画面
  participant サーバー
+ ユーザー->> 予約画面:予約日時を入力
+ 
 ```
 
 ## クラス図
