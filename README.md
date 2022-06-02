@@ -46,7 +46,10 @@ sequenceDiagram
  participant 予約画面
  participant サーバー
  ユーザー->> 予約画面:予約日時を入力
- 
+ 予約画面->> サーバー:予約日時を送信
+ loop サーバー
+ サーバー->> サーバー:予約日時を記録
+ end
 ```
 
 ## クラス図
