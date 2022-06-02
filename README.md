@@ -63,4 +63,9 @@ sequenceDiagram
 - カッコいいほど高得点
 
 ## 解答
-
+```mermaid
+classDiagram
+ラーメン o--麺
+ラーメン o--スープ
+麺 *--小麦
+麺 *--かん水
