@@ -41,6 +41,10 @@ flowchart LR;
 
 ## 解答
 ```mermaid
+sequenceDiagram
+ participant ユーザー
+ participant 予約画面
+ participant サーバー
 ```
 
 ## クラス図
