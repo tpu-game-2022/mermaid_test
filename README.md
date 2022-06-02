@@ -52,6 +52,25 @@ flowchart LR;
 
 ## 解答
 ```mermaid
+sequenceDiagram
+participant Kikaku
+participant Design
+participant Program
+loop Prepare a proposal.
+Kikaku->>Kikaku:Brainstorm ideas.
+end
+Kikaku->>Design: Please give me a RoughDesign!
+loop Making texture
+Design->>Design: Keep adding to one's revisions
+end
+Design-->>Kikaku:Douzo
+Program->>Design:Give me a textur too, please.
+Design-->>Program:OK.
+Kikaku->>Program:Can you make this System?
+loop Writing Programs
+Program->>Program:Debug.
+end
+Program-->>Kikaku:Douzo.
 ```
 
 ## クラス図
