@@ -51,6 +51,7 @@ flowchart LR;
 - カッコいいほど高得点
 
 ## 解答
+-「ゲーム制作」をテーマにしました。
 ```mermaid
 sequenceDiagram
 participant Kikaku
