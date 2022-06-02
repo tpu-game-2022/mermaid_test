@@ -87,12 +87,14 @@ classDiagram
 Kougeidai o-- AtsugiCampus
 Kougeidai o-- NakanoCampus
 AtsugiCampus *-- KouGakubu
-Kougakubu:int Machine
-Kougakubu:int Electronics
-Kougakubu:int IT
-Kougakubu:int Chemistry
-Kougakubu:int Artchitecture
+KouGakubu:size()
+KouGakubu:int Machine
+KouGakubu:int Electronics
+KouGakubu:int IT
+KouGakubu:int Chemistry
+KouGakubu:int Artchitecture
 NakanoCampus *-- GeizyutsuGakubu
+GeizyutsuGakubu:size()
 GeizyutsuGakubu:int Picture
 GeizyutsuGakubu:int Movie
 GeizyutsuGakubu:int Design
