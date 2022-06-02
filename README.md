@@ -84,8 +84,8 @@ Program-->>Kikaku:Douzo.
 ## 解答
 ```mermaid
 classDiagram
-Kougeidai o-- AtsugiCampus
-Kougeidai o-- NakanoCampus
+Kogeidai o-- AtsugiCampus
+Kogeidai o-- NakanoCampus
 AtsugiCampus *-- KouGakubu
 KouGakubu:Gakubu
 KouGakubu:Gakunen
