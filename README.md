@@ -87,17 +87,17 @@ classDiagram
 Kougeidai o-- AtsugiCampus
 Kougeidai o-- NakanoCampus
 AtsugiCampus *-- KouGakubu
-Kougakubu:Machine
-Kougakubu:Electronics
-Kougakubu:IT
-Kougakubu:Chemistry
-Kougakubu:Artchitecture
+Kougakubu:int Machine
+Kougakubu:int Electronics
+Kougakubu:int IT
+Kougakubu:int Chemistry
+Kougakubu:int Artchitecture
 NakanoCampus *-- GeizyutsuGakubu
-GeizyutsuGakubu:Picture
-GeizyutsuGakubu:Movie
-GeizyutsuGakubu:Design
-GeizyutsuGakubu:IM
-GeizyutsuGakubu:Animation
-GeizyutsuGakubu:Game
-GeizyutsuGakubu:Comic
+GeizyutsuGakubu:int Picture
+GeizyutsuGakubu:int Movie
+GeizyutsuGakubu:int Design
+GeizyutsuGakubu:int IM
+GeizyutsuGakubu:int Animation
+GeizyutsuGakubu:int Game
+GeizyutsuGakubu:int Comic
 ```
