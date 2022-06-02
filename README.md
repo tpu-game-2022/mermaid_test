@@ -88,6 +88,7 @@ Kougeidai o-- AtsugiCampus
 Kougeidai o-- NakanoCampus
 AtsugiCampus *-- KouGakubu
 KouGakubu:Gakubu
+KouGakubu:Gakunen
 KouGakubu<|--Machine
 KouGakubu<|--Electronics
 KouGakubu<|--IT
@@ -95,6 +96,7 @@ KouGakubu<|--Chemistry
 KouGakubu<|--Artchitecture
 NakanoCampus *-- GeizyutsuGakubu
 GeizyutsuGakubu:Gakubu
+GeizyutsuGakubu:Gakunen
 GeizyutsuGakubu<|--Picture
 GeizyutsuGakubu<|--Movie
 GeizyutsuGakubu<|--Design
