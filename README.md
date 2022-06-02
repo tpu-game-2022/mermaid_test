@@ -87,6 +87,7 @@ classDiagram
 Kougeidai o-- AtsugiCampus
 Kougeidai o-- NakanoCampus
 AtsugiCampus *-- KouGakubu
+KouGakubu:学部
 KouGakubu:Machine
 KouGakubu:Electronics
 KouGakubu:IT
