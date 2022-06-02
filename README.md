@@ -63,8 +63,4 @@ sequenceDiagram
 - カッコいいほど高得点
 
 ## 解答
-```mermaid
-classDiagram
 
-
-```
