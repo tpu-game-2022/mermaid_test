@@ -82,6 +82,7 @@ Program-->>Kikaku:Douzo.
 - カッコいいほど高得点
 
 ## 解答
+-「東京工芸大学」をテーマにしました。
 ```mermaid
 classDiagram
 Kogeidai o-- AtsugiCampus
