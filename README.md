@@ -65,7 +65,6 @@ sequenceDiagram
 ## 解答
 ```mermaid
 classDiagram
-ラーメン o-- 麺
-ラーメン o-- スープ
+
 
 ```
