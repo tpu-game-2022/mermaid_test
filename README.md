@@ -67,6 +67,7 @@ sequenceDiagram
 classDiagram
 ラーメン o--麺
 ラーメン o--スープ
+ラーメン o--トッピング
 麺 *--小麦
 麺 *--かん水
 スープ *--香味野菜
