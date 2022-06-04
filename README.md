@@ -51,9 +51,7 @@ flowchart TD;
 - カッコいいほど高得点
 
 ## 解答
--テーマ:大学内の人
-```mermaid
-classDiagram
+-テーマ:大学内の人 
 人 : kokuseki
 人 : seibetsu
 人 : yakuwari
@@ -64,4 +62,9 @@ classDiagram
 人 *-- 外国人
 人 *-- 学生
 人 *-- 従業員
+
+```mermaid
+classDiagram
+人 <|-- kokuseki
+
 ```
