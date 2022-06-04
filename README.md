@@ -20,16 +20,14 @@ Mermaidを触ってみよう
 ```mermaid
 flowchart TD;
   START([開始]) --> A(FORMAT Floppy)
-  A --> B{1.44MB?}
-  B -->|YES|C(Format Success)
-  B -->|NO|D{What size?}
-  D -->|720KB|E(Format Success)
-  D -->|1.23MB|F(Format Success)
-  D -->|Other|G(Not Supported)
+  A --> B{What size?}
+  B -->|720KB|C(2DD Format Success)
+  B -->|1.23MB|D(2HD Format Success)
+  B -->|1.44MB|D
+  B -->|Other|E(Not Supported)
   C --> END([終了])
+  D --> END([終了])
   E --> END([終了])
-  F --> END([終了])
-  G --> END([終了])
 ```
 
 ## シーケンス図
@@ -41,6 +39,19 @@ flowchart TD;
 
 ## 解答
 ```mermaid
+sequenceDiagram
+actor 人
+participant A as ドライバー
+participant B as ねじ
+participant C as 部品
+
+    人 ->>+ A: 手に持つ
+    A ->> B: 回す
+    B -->> C: 外れる
+    C ->> C: 交換
+    B -->> C: 付ける
+　　A ->> B: 閉める
+　　A ->> 人: 置く
 ```
 
 ## クラス図
@@ -51,3 +62,6 @@ flowchart TD;
 - カッコいいほど高得点
 
 ## 解答
+```mermaid
+
+```
