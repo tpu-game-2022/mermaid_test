@@ -66,5 +66,6 @@ flowchart TD;
 ```mermaid
 classDiagram
 人 <|-- kokuseki
+人 : 役割
 
 ```
