@@ -19,12 +19,12 @@ Mermaidを触ってみよう
 ## 解答
 ```mermaid
 flowchart TD;
-  START([開始]) --> FORMAT Floppy
-  FORMAT Floppy --> A{1.44MB?}
-  A -->|YES|B{1.44MB?}
-  A -->|NO|C{What size?}
-  B --> END([終了])
+  START([開始]) --> A(FORMAT Floppy)
+  A --> B{1.44MB?}
+  B -->|YES|B{1.44MB?}
+  B -->|NO|C{What size?}
   C --> END([終了])
+  D --> END([終了])
 ```
 
 ## シーケンス図
