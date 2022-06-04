@@ -19,7 +19,7 @@ Mermaidを触ってみよう
 ## 解答
 -テーマ:数当てゲーム
 ```mermaid
-flowchart LR;
+flowchart TD;
   A([ゲーム開始]) --> B[答えの数字生成]
   B --> C[/プレイヤー入力/]
   C --> D{プレイヤーの入力<答え} 
