@@ -67,5 +67,7 @@ flowchart TD;
 classDiagram
 人 <|-- kokuseki
 人 : 役割
+人 : 性別
+人 : 国籍
 
 ```
