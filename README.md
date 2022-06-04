@@ -20,7 +20,7 @@ Mermaidを触ってみよう
 ```mermaid
 flowchart TD;
   START([開始]) --> FORMAT Floppy
-  FORMAT --> A{1.44MB?}
+  FORMAT Floppy --> A{1.44MB?}
   A -->|YES|B{1.44MB?}
   A -->|NO|C{What size?}
   B --> END([終了])
