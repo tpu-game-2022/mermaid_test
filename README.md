@@ -60,7 +60,43 @@ flowchart LR;
 - カッコいいほど高得点
 
 ## 解答
+### レジ
+- POSレジを想定
+- 有人のレジを想定
+- あくまでシステムの一部抜粋
 ```mermaid
+sequenceDiagram
+%% ライフラインの定数的なやつを宣言しておく
+participant User as 客
+participant Employee as 店員
+participant CashRegister as POSレジ
+participant Server as サーバー
+
+    loop 商品数
+      User ->> Employee : 購入依頼
+      Employee ->>+ CashRegister : スキャン
+      CashRegister ->> Server : 商品情報を提供
+      CashRegister -->>- CashRegister : 商品情報を表示
+      opt 年齢確認が必要
+        CashRegister -->>+ Employee: 年齢確認を要求 
+        Employee ->>+ User : 年齢確認を要求
+        User ->> Employee : 年齢
+        opt 未成年の場合
+          Employee ->>- User : 販売を拒否
+        end
+      end
+    end
+    
+    CashRegister ->> CashRegister : 商品総額を表示
+    Employee ->>+ User : 支払い方法を尋ねる
+    User ->> Employee : 支払い方法
+    Employee ->> User : 支払いの要求
+    User ->>- Employee : 支払い
+    Employee -->> CashRegister : お金を入れる
+    opt お釣りがある
+      CashRegister ->> Employee : お釣り
+      Employee -->> User : お釣りの返却
+    end
 ```
 
 ## クラス図
@@ -71,3 +107,7 @@ flowchart LR;
 - カッコいいほど高得点
 
 ## 解答
+
+```mermaid
+
+```
