@@ -54,9 +54,9 @@ flowchart TD;
 -テーマ:大学内の人
 ```mermaid
   classDiagram
-  人:国籍
-  人:性別
-  人:役割
+  人 : kokuseki
+  人 : seibetsu
+  人 : yakuwari
   人 *-- 男性
   人 *-- 女性
   人 *-- その他
