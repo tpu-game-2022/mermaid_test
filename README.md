@@ -63,7 +63,6 @@ flowchart LR;
 ### レジ
 - POSレジを想定
 - 有人のレジを想定
-- あくまでシステムの一部抜粋
 ```mermaid
 sequenceDiagram
 %% ライフラインの定数的なやつを宣言しておく
@@ -107,7 +106,40 @@ participant Server as サーバー
 - カッコいいほど高得点
 
 ## 解答
-
+### 五目並べのクラス図
+- 五目並べ本体ではなくプレイヤーやCPUとの関係性
+- Stoneはenumの型で None,White,Blackを保有している
 ```mermaid
-
+  classDiagram
+    Entity <|-- Player
+    Entity <|-- Computer
+    Gomoku "1" o-- "0..2" Player
+    Gomoku "1" o-- "0..2" Computer
+    class Entity {
+        <<abstract>>
+        # string name
+        # Stone stoneColor
+        + void SetName(string)
+        + string GetName()
+        + void SetColor(Stone)
+        + Stone GetColor()
+    }
+    class Player {
+        + Player(Stone ,string)
+    }
+    class Computer {
+        - int level
+        - int MaxLevel
+        - int minLevel
+        
+        + Computer(Stone,int string)
+    }
+    class Gomoku {
+        - int Width
+        - int Height
+        - Stone[,] board 
+        
+        + Start()
+    }
+    
 ```
