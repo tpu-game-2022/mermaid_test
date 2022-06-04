@@ -21,10 +21,15 @@ Mermaidを触ってみよう
 flowchart TD;
   START([開始]) --> A(FORMAT Floppy)
   A --> B{1.44MB?}
-  B -->|YES|B{1.44MB?}
-  B -->|NO|C{What size?}
+  B -->|YES|C(Format Success)
+  B -->|NO|D{What size?}
+  D -->|720KB|E(Format Success)
+  D -->|1.23MB|F(Format Success)
+  D -->|Other|G(Not Supported)
   C --> END([終了])
-  D --> END([終了])
+  E --> END([終了])
+  F --> END([終了])
+  G --> END([終了])
 ```
 
 ## シーケンス図
