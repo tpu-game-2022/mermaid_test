@@ -53,11 +53,16 @@ flowchart TD;
 ## 解答
 -テーマ:大学内の人
 ```mermaid
-  classDiagram
+classDiagram
   人 : kokuseki
   人 : seibetsu
   人 : yakuwari
   人 *-- 男性
   人 *-- 女性
- 
+  人 *-- その他
+  人 *-- 自国人
+  人 *-- 外国人
+  人 *-- 学生
+  人 *-- 従業員
+
 ```
