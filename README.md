@@ -18,15 +18,15 @@ Mermaidを触ってみよう
 
 ## 解答
 ```mermaid
-flowchart TB
+flowchart LB
   A([Start])-->B{お金を入れたか}
   B--Yes-->C[金額を表示]
   c-->D1
   subgraph 返却ボタンの処理
     D1{返却ボタンは押されたか}--Yes-->D2[お金を返却する]
     D2-->D3[金額をリセットする]
-    D3-->A
     end
+  D3-->A
   D1-->E{購入ボタンが押されたか}
   E{購入ボタンが押されたか}--Yes-->F{指定以上の金額が入っているか}
   F--Yes-->G[飲み物を出す]
