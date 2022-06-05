@@ -33,8 +33,6 @@ flowchart TB
   direction LR
   D1{返却ボタンを押されたか}--Yes-->D2[お金を返却する]
   D2-->D3[金額の表示をリセットする]
-  D3-->end
-  D1--No-->end
   end
   
 ```
