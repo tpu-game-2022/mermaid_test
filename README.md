@@ -20,21 +20,15 @@ Mermaidを触ってみよう
 ```mermaid
 flowchart LR
   START-->B{お金を入れたか}
-  B--Yes-->C[金額を表示]
-  B--No-->Start
+  B--Yes-->C(金額を表示)
+  B--No-->START
   C-->返却ボタンの処理-->E{購入ボタンが押されたか}
   E{購入ボタンが押されたか}--Yes-->F{指定以上の金額が入っているか}
   E--No-->B
-  F--Yes-->G[飲み物を出す]
+  F--Yes-->G(飲み物を出す)
   F--No-->B
   G-->END
 
-  subgraph 返却ボタンの処理
-  direction TB
-  D1{返却ボタンを押されたか}--Yes-->D2[お金を返却する]
-  D2-->D3[金額の表示をリセットする]
-  end
-  
 ```
 
 ## シーケンス図
