@@ -64,9 +64,9 @@ sequenceDiagram
 ```mermaid
 classDiagram
       会社 <|-- 社員
-      社員 <|-- 技術社員
-      社員 <|-- 営業社員
-      社員 <|-- 事務社員
+      社員 o-- 技術社員
+      社員 o-- 営業社員
+      社員 o-- 事務社員
       class 会社{
       +名前
       +住所
