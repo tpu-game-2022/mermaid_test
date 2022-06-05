@@ -40,18 +40,28 @@ flowchart TD;
 - カッコいいほど高得点
 
 ## 解答
+-テーマ:カラオケの会員登録
 ```mermaid
 sequenceDiagram
-  participant Alice
-  participant Bob
-  Alice->>John: Hello John, how are you?
-  loop Healthcheck
-      John->>John: Fight against hypochondria
+  participant お客
+  participant 店員
+  participant PC
+  お客->>サーバ: 会員情報を入力
+  サーバ->>お客: 受付番号発行
+  お客->>店員:受付番号番号提示
+  店員->>PC:受付番号入力
+  PC->>受付番号提供
+  loop サーバ処理
+      受付番号確認
   end
-  Note right of John: Rational thoughts <br/>prevail!
-  John-->>Alice: Great!
-  John->>Bob: How about you?
-  Bob-->>John: Jolly good!
+  サーバ->>PC:本人確認画面を表示
+  店員->>お客:身分証提示を要求
+  お客->>店員:身分証を提示
+  店員->>PC:身分証情報を入力
+  PC->>サーバ:身分証情報を提供
+  loop サーバ処理
+      会員登録
+  サーバ-->>お客:会員登録完了のメッセージ
 
 ```
 
