@@ -63,12 +63,6 @@ sequenceDiagram
 ## 解答
 ```mermaid
 classDiagram
-  class 会社
-  {
-    +名前:string
-    +住所:string
-    +電話番号:int
-    +入社手続き()
-    +退社手続き()
-  }
+  会社:+社員
+  会社:+名前
 ```
