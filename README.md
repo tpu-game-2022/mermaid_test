@@ -35,17 +35,17 @@ flowchart LR;
 
 ## 解答
 ```mermaid
-  participant プレイヤー
+  participant player
   participant　イベント1
   participant　イベント2
   participant  イベント3
   participant　バットエンド
   participant　友情エンド
   participant　ハッピーエンド
-  プレイヤー->>イベント1:攻略対象と成功（+1ポイント）
-  プレイヤー->>イベント1:攻略対象と失敗
+  player->>イベント1:攻略対象と成功（+1ポイント）
+  player->>イベント1:攻略対象と失敗
   loop 知り合いエンド
-  プレイヤー->>イベント1:このイベントをクリア後進められる
+  player->>イベント1:このイベントをクリア後進められる
   イベント1->>イベント2:攻略対象と成功（+1ポイント）
   イベント1->>イベント2:攻略対象と失敗
   イベント2->>イベント3:攻略対象と成功（+1ポイント）
