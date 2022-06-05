@@ -18,7 +18,7 @@ Mermaidを触ってみよう
 
 ## 解答
 ```mermaid
-flowchart TB
+flowchart LR
   START-->A(購入者が現れる)
   A(購入者が現れる)-->B{お金を入れたか}
   B--Yes-->C(金額を表示)
@@ -27,7 +27,7 @@ flowchart TB
   D--Yes-->返却ボタンの処理
   D--No-->E{購入ボタンが押されたか}
     subgraph 返却ボタンの処理
-    direction LR
+    direction TB
       D1(返却ボタンを押された)-->D2(お金を返却する)-->D3(金額の表示をリセットする)
     end
   返却ボタンの処理-->END
