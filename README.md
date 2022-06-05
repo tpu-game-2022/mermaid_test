@@ -21,7 +21,8 @@ Mermaidを触ってみよう
 flowchart TB
   A([Start])-->B{お金を入れたか}
   B--Yes-->C[金額を表示]
-  c-->subgraph 返却ボタンの処理
+  c-->D1
+  subgraph 返却ボタンの処理
     D1{返却ボタンは押されたか}--Yes-->D2[お金を返却する]
     D2-->D3[金額をリセットする]
     D3-->A
