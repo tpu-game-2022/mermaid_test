@@ -18,7 +18,7 @@ Mermaidを触ってみよう
 
 ## 解答
 ```mermaid
-flowchart TD;
+flowchart LR;
   START([開始]) --> A(FORMAT Floppy)
   A --> B{What size?}
   B -->|720KB|C(2DD Format Success)
@@ -48,7 +48,7 @@ participant C as 部品
     人 ->>+ A: 手に持つ
     A ->> B: 回す
     B -->> C: 外れる
-    C ->> C: 交換
+    C -->> C: 交換
     B -->> C: 付ける
 　　A ->> B: 閉める
 　　A ->> 人: 置く
@@ -63,5 +63,23 @@ participant C as 部品
 
 ## 解答
 ```mermaid
+classDiagram
+ class CPU
+ class cache {memory}
+ class intel {manufacturer}
+ class AMD {manufacturer}
+ class Corei {consumer}
+ class Xeon {server}
+ class Ryzen {consumer}
+ class Epic {server}
 
+ CPU o-- MPU
+ CPU o-- FPU
+ CPU o-- cache
+ CPU <|-- intel
+ CPU <|-- AMD
+ intel <|-- Corei
+ intel <|-- Xeon
+ AMD <|-- Ryzen
+ AMD <|-- Epic
 ```
