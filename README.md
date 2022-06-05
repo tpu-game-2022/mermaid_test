@@ -19,7 +19,13 @@ Mermaidを触ってみよう
 ## 解答
 ```mermaid
 flowchart LR;
-  A --> B
+  A([開始]) --> B[パズルを選ぶ]
+  B --> C{判断}
+  C -- はまる --> D[はめる]
+  D -- まだ埋まってない --> B
+  C -- はまらない -->　B
+  D -- 埋まった--> E([終了])
+  
 ```
 
 ## シーケンス図
@@ -31,6 +37,17 @@ flowchart LR;
 
 ## 解答
 ```mermaid
+sequenceDiagram
+    participant NAME_A as プレイヤー１
+    participant NAME_B as プレイヤー２
+    participant NAME_C as プレイヤー３
+    NAME_A ->>NAME_B: パズルを選ぶ
+    NAME_B ->>NAME_C: はまる連絡する
+    NAME_B ->>NAME_B: はまるか判断
+    NAME_B -->>NAME_A: はまらないよ
+    NAME_C ->>NAME_C: パズルをはめる
+    NAME_C -->>NAME_A: はめた連絡する
+
 ```
 
 ## クラス図
@@ -41,3 +58,30 @@ flowchart LR;
 - カッコいいほど高得点
 
 ## 解答
+```mermaid
+classDiagram
+class 盤面 {
+  -int judge
+    +はまる()
+    +はまらない()
+}
+class ピース{
+  +上向き()
+  +下向き()
+  +右向き()
+  +左向き()
+}
+class はめる人{
+  +はめる()
+  +はめない()
+}
+class Size{
+  -int size
+}
+class Number{
+  -int number
+}
+盤面 <|-- ピース
+盤面 <|-- はめる人
+盤面 o-- Size
+盤面 o-- Number
