@@ -63,6 +63,7 @@ sequenceDiagram
 ## 解答
 ```mermaid
 classDiagram
+  会社 <|-- 社員
   class 会社
   会社:+住所
   会社:+名前
