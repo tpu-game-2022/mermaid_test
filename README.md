@@ -19,7 +19,7 @@ Mermaidを触ってみよう
 ## 解答
 ```mermaid
 flowchart LR
-  A([Start])-->B{お金を入れたか}
+  Start-->B{お金を入れたか}
   B--Yes-->C[金額を表示]
   B--No-->A
   C-->返却ボタンの処理-->E{購入ボタンが押されたか}
@@ -27,7 +27,7 @@ flowchart LR
   E--No-->B
   F--Yes-->G[飲み物を出す]
   F--No-->B
-  G-->H([End])
+  G-->End
 
   subgraph 返却ボタンの処理
   direction TB
