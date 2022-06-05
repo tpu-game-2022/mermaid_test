@@ -41,6 +41,19 @@ flowchart TD;
 
 ## 解答
 ```mermaid
+sequenceDiagram
+  sequenceDiagram
+  participant Alice
+  participant Bob
+  Alice->>John: Hello John, how are you?
+  loop Healthcheck
+  John->>John: Fight against hypochondria
+  end
+  Note right of John: Rational thoughts <br/>prevail!
+  John-->>Alice: Great!
+  John->>Bob: How about you?
+  Bob-->>John: Jolly good!
+
 ```
 
 ## クラス図
@@ -52,16 +65,6 @@ flowchart TD;
 
 ## 解答
 -テーマ:大学内の人 
-人 : kokuseki
-人 : seibetsu
-人 : yakuwari
-人 *-- 男性
-人 *-- 女性
-人 *-- その他
-人 *-- 自国人
-人 *-- 外国人
-人 *-- 学生
-人 *-- 従業員
 
 ```mermaid
 classDiagram
