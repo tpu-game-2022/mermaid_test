@@ -37,23 +37,23 @@ flowchart LR;
 ```mermaid
 sequenceDiagram
   participant player
-  participant　イベント1
-  participant　イベント2
-  participant  イベント3
-  participant　バットエンド
-  participant　友情エンド
-  participant　ハッピーエンド
-  player->>イベント1:攻略対象と成功（+1ポイント）
-  player->>イベント1:攻略対象と失敗
-  loop 知り合いエンド
-  player->>イベント1:このイベントをクリア後進められる
-  イベント1->>イベント2:攻略対象と成功（+1ポイント）
-  イベント1->>イベント2:攻略対象と失敗
-  イベント2->>イベント3:攻略対象と成功（+1ポイント）
-  イベント2->>イベント3:攻略対象と失敗
-  イベント3->>バットエンド:1ポイントの場合
-  イベント3->>友情エンド:2ポイントの場合
-  イベント3->>ハッピーエンド:3ポイントの場合
+  participant　Event1
+  participant　Event2
+  participant  Event3
+  participant　BAD_END
+  participant　Normal_END
+  participant　HAPPY_END
+  player->>Event1:攻略対象と成功（+1ポイント）
+  player->>Event1:攻略対象と失敗
+  loop FRIEND_END
+  player->>Event1:このイベントをクリア後進められる
+  Event1->>Event2:攻略対象と成功（+1ポイント）
+  Event1->>Event2:攻略対象と失敗
+  Event2->>Event3:攻略対象と成功（+1ポイント）
+  Event2->>Event3:攻略対象と失敗
+  Event3->>BADEND:1ポイントの場合
+  Event3->>Normal_END:2ポイントの場合
+  Event3->>HAPPY_END:3ポイントの場合
 ```
 
 ## クラス図
