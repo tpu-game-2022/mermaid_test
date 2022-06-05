@@ -55,6 +55,7 @@ Event2->>Event3:攻略対象と失敗
 Event3->>BADEND:1ポイントの場合
 Event3->>Normal_END:2ポイントの場合
 Event3->>HAPPY_END:3ポイントの場合
+BAD_END-->>Event1:中間ポイントからスタート可能
 ```
 
 ## クラス図
