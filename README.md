@@ -37,7 +37,12 @@ flowchart LR;
 ```mermaid
 sequenceDiagram
 participant player
-
+participant　Event1
+participant　Event2
+participant  Event3
+participant　BAD_END
+participant　Normal_END
+participant　HAPPY_END
 ```
 
 ## クラス図
