@@ -19,23 +19,14 @@ Mermaidを触ってみよう
 ## 解答
 ```mermaid
 flowchart TB
-  START-->A(購入者が現れる)
-  A(購入者が現れる)-->B{お金を入れたか}
-  B--Yes-->C(金額を表示)
-  B--No-->START
-  C-->D{返却ボタンは押されたか}
-  D--Yes-->返却ボタンの処理-->START
-  D--No-->C
-    subgraph 返却ボタンの処理
-    direction LR
-      D1{返却ボタンを押されたか}-->D2(お金を返却する)-->D3(金額の表示をリセットする)
+  START-->A
+  A-->Break
+    subgraph Break
+    b1-->b2
+    b2--Yes-->b3
+    b2--No-->b4
     end
-  C-->E{購入ボタンが押されたか}
-  E{購入ボタンが押されたか}--Yes-->F{指定以上の金額が入っているか}
-  E--No-->B
-  F--Yes-->G(飲み物を出す)
-  F--No-->B
-  G-->END
+  Break-->C
 ```
 
 ## シーケンス図
