@@ -18,7 +18,7 @@ Mermaidを触ってみよう
 
 ## 解答
 ```mermaid
-flowchart LR
+flowchart TB
   A([Start])-->B{お金を入れたか}
   B--Yes-->C[金額を表示]
   C-->D1
