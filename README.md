@@ -43,6 +43,7 @@ participant  Event3
 participant　BAD_END
 participant　Normal_END
 participant　HAPPY_END
+player->>Event1:攻略対象と成功（+1ポイント）
 ```
 
 ## クラス図
