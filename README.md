@@ -63,7 +63,7 @@ sequenceDiagram
 ## 解答
 ```mermaid
 classDiagram
-      会社 <|-- 社員
+      会社 <o-- 社員
       社員 o-- 技術社員
       社員 o-- 営業社員
       社員 o-- 事務社員
