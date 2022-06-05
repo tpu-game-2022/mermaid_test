@@ -41,14 +41,14 @@ sequenceDiagram
   participant Taro
   participant Ziro
   participant Saburo
-  Taro ->> Ziro: "朝は何食べた？"
-  Ziro -->> Taro: "目玉焼きを食べたよ"
-  Taro ->> Saburo: "三郎は？"
-  loop "思い出している"
-    Saburo ->> Saburo: "何食べたったけ"
+  Taro ->> Ziro: 朝は何食べた？
+  Ziro -->> Taro: 目玉焼きを食べたよ
+  Taro ->> Saburo: 三郎は？
+  loop 思い出している
+    Saburo ->> Saburo: 何食べたったけ
   end
-  Saburo -->> Taro: "忘れちゃった"
-  Taro ->> Saburo: "お前は忘れっぽいよな"
+  Saburo -->> Taro: 忘れちゃった
+  Taro ->> Saburo: お前は忘れっぽいよな
 ```
 
 ## クラス図
