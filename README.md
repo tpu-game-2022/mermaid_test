@@ -35,6 +35,7 @@ flowchart LR;
 
 ## 解答
 ```mermaid
+sequenceDiagram
   participant player
   participant　イベント1
   participant　イベント2
