@@ -63,24 +63,31 @@ sequenceDiagram
 ## 解答
 ```mermaid
 classDiagram
-      Animal <|-- Duck
-      Animal <|-- Fish
-      Animal <|-- Zebra
-      Animal : +int age
-      Animal : +String gender
-      Animal: +isMammal()
-      Animal: +mate()
-      class Duck{
-          +String beakColor
-          +swim()
-          +quack()
+      会社 <|-- 社員
+      社員 o-- 技術社員
+      社員 o-- 営業社員
+      社員 o-- 事務社員
+      会社 : +名前
+      会社 : +住所
+      会社: +資本
+      会社: +会社登録()
+      class 社員
+      {
+          +社員番号
+          +名前
+          +生年月日
+          +社員登録()
       }
-      class Fish{
-          -int sizeInFeet
-          -canEat()
+      class 技術社員
+      {
+          システムを開発する
       }
-      class Zebra{
-          +bool is_wild
-          +run()
+      class 営業社員
+      {
+          営業業務をする
+      }
+      class 事務社員
+      {
+          事務作業をする
       }
 ```
