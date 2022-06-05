@@ -63,6 +63,9 @@ sequenceDiagram
 ## 解答
 ```mermaid
 classDiagram
-  会社:+社員
-  会社:+名前
+  class menber
+  menber:+int numer
+  menber:+string name
+  menber:+func()
+  menber:+value()
 ```
