@@ -29,11 +29,11 @@ flowchart TB
   F-->|YES|G(飲み物を出す)
   F-->|NO|返却ボタンの処理
   G-->END
- subgraph 返却ボタンの処理
-  direction LR
-  D1{返却ボタンを押されたか}-->|YES|D2(お金を返却する)
-  D1-->|NO|E
-  D2-->D3(金額の表示をリセットする)
+ 　subgraph 返却ボタンの処理
+    direction LR
+    D1{返却ボタンを押されたか}-->|YES|D2(お金を返却する)
+    D1-->|NO|E
+    D2-->D3(金額の表示をリセットする)
   end
 ```
 
