@@ -35,7 +35,7 @@ flowchart LR;
 
 ## 解答
 ```mermaid
-SequenceDiagram
+sequenceDiagram
 participant player
 participant　Event1
 participant　Event2
