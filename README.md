@@ -45,6 +45,7 @@ participant　Normal_END
 participant　HAPPY_END
 player->>Event1:攻略対象と成功（+1ポイント）
 player->>Event1:攻略対象と失敗
+loop FRIEND_END
 player->>Event1:このイベントをクリア後進められる
 Event1->>Event2:攻略対象と成功（+1ポイント）
 Event1->>Event2:攻略対象と失敗
