@@ -48,9 +48,15 @@ flowchart LR
 ## 解答
 ```mermaid
 sequenceDiagram
-  actor 購入者
-  actor 出店者
-  actor 仲介業者
+  actor デュエリスト
+  actor イニシエーター
+  actor センチネル
+  actor コントローラー
+  participant enemy
+  デュエリスト->>+enemy:敵を倒していく
+  イニシエーター->>デュエリスト:デュエリストのサポートをする
+  センチネル->>+enemy:裏どりする敵を検知する
+  コントローラー->>+enemy:マップのコントロールをする
 ```
 
 ## クラス図
