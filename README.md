@@ -47,6 +47,10 @@ flowchart LR
 
 ## 解答
 ```mermaid
+sequenceDiagram
+  actor 購入者
+  actor 出店者
+  actor 仲介業者
 ```
 
 ## クラス図
@@ -57,3 +61,32 @@ flowchart LR
 - カッコいいほど高得点
 
 ## 解答
+classDiagram
+  会社<|--社員
+  class 会社
+  {
+    +名前:string
+    +住所:string
+    +電話番号:int
+    +入社手続き()
+    +退社手続き()
+  }
+  class　社員
+  {
+    +社員番号:int
+    +名前:string
+    +年齢:int
+    +性別:bool
+  }
+  class 技術社員
+  {
+    +システム開発を行う
+  }
+  class 営業社員
+  {
+    +営業を行う
+  }
+  class 事務社員
+  {
+    +事務作業を行う
+  }
