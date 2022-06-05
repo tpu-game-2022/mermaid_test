@@ -69,7 +69,7 @@ Normal_END-->>Event2:中間ポイントからスタート
 
 ## 解答
 ```mermaid
-ClassDiagram
+classDiagram
 
 ヴァロラント⚬-- エージェント
 エージェント:役割[]
